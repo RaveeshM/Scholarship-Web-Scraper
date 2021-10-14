@@ -15,7 +15,7 @@ def snip(src, sub1, sub2):
     
     return src[idx_start:idx_end].strip()
 ```
-The heavy-lifting of this scraper is done using the ```snip``` function. This function extracts the string located after a given ```sub1``` string and before a ```sub2``` string.
+Much of the code was abstracted through a ```snip``` function I designed. This function extracts the string located after a given ```sub1``` string and before a ```sub2``` string.
 
 ## How does it look?
 The data from the scraper is outputted as a CSV file which can be opened with Microsoft Excel or Google Sheets to filter and refine. An example of the output is provided [here](example-scholarships.csv). This file only contains the first 100 entries since large files (the actual output has 23,000+ entries) are not displayed on Github.
